@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-mongoose.connect('mongodb://localhost:27017/dms')
+mongoose.connect('mongodb+srv://darshan:darshan2304@cluster5.xdp2gyp.mongodb.net/?appName=Cluster5')
   .then(() => console.log('MongoDB Connected'));
 
 app.use('/api/auth', require('./routes/authRoutes'));
